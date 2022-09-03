@@ -15,3 +15,14 @@
 .btn-white {
   @apply bg-bookmark-white;
 }
+
+.for-accordion {
+  @apply  opacity-100 h-auto py-4 px-4 mt-4;
+}
+.for-paragraph {
+  @apply mt-0;
+}
+
+/* box-icon {
+  @apply w-[50px]
+} */

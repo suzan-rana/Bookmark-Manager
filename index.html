@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/styles.css" rel="stylesheet">
   <title>Bookmark Manager</title>
+  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js" defer></script>
+  <script src="main.js"></script>
+
 </head>
 
 <body>
@@ -22,11 +25,11 @@
 
       <div id="navigation" class="hidden w-[40%] space-x-4 md:flex justify-around items-center">
         <div id="main-nav" class="flex justify-between items-center space-x-8">
-          <a href="#">Features</a>
-          <a href="#">Pricing</a>
-          <a href="#">Contact</a>
+          <a href="#" class="hover:text-gray-500">Features</a>
+          <a href="#" class="hover:text-gray-500">Pricing</a>
+          <a href="#" class="hover:text-gray-500">Contact</a>
         </div>
-        <a href="#" class="btn btn-purple">Login</a>
+        <a href="#" class="btn btn-purple hover:bg-blue-500 ">Login</a>
 
       </div>
 
@@ -45,8 +48,8 @@
           load instantly. Try it for free.
         </p>
 
-        <a href="#" class="btn bg-blue-600 text-white">Get it on chrome</a>
-        <a href="#" class="btn">Get it on firefox</a>
+        <a href="#" class="btn bg-blue-600 hover:bg-blue-500 text-white">Get it on chrome</a>
+        <a href="#" class="btn hover:bg-gray-100 md:ml-4">Get it on firefox</a>
       </div>
 
       <div id="image-container" class="w-[85%] max-w-md">
@@ -75,7 +78,7 @@
         <h2 class="text-3xl md:text-4xl ">Bookmark in one click</h2>
         <p class="my-6 mb-8 text-gray-500">Organize your bookmarks however you like. Our simple drag-and-drop interface
           gives you complete control over how you manage your favourite sites.</p>
-        <a href="#" class="btn bg-blue-600 text-white">More info</a>
+        <a href="#" class="btn bg-blue-600 hover:bg-blue-500  text-white">More info</a>
       </div>
     </div>
 
@@ -90,7 +93,7 @@
         </h2>
         <p class="my-6 mb-8 text-gray-500">Easily share your bookmarks and collections with others. Create a shareable
           link that you can send at the click of a button.</p>
-        <a href="#" class="btn bg-blue-600 text-white">More info</a>
+        <a href="#" class="btn bg-blue-600 hover:bg-blue-500  text-white">More info</a>
       </div>
     </div>
 
@@ -105,7 +108,7 @@
         </h2>
         <p class="my-6 mb-8 text-gray-500">Our powerful search feature will help you find saved sites in no time at all.
           No need to crawl through all of your bookmarks.</p>
-        <a href="#" class="btn bg-blue-600 text-white">More info</a>
+        <a href="#" class="btn bg-blue-600 hover:bg-blue-500  text-white">More info</a>
       </div>
     </div>
 
@@ -122,7 +125,8 @@
     </div>
 
     <!-- flex-container  -->
-    <div class="flex flex-col mt-16 items-center mx-auto space-y-16 md:flex-row md:justify-between md:space-y-0 md:space-x-12">
+    <div
+      class="flex flex-col mt-16 items-center mx-auto space-y-16 md:flex-row md:justify-between md:space-y-0 md:space-x-12">
       <div class="px-8 w-[100%] rounded-md py-10 mx-auto text-center shadow-md md:w-[90%]">
         <div id="image-container mx-auto">
           <img class="block max-w-[100%] mx-auto" src="./assets/logo-chrome.svg" alt="">
@@ -130,7 +134,7 @@
 
         <h3 class="mt-8 capitalize">Add to Chrome</h3>
         <p class="mb-12 mt-1 text-gray-500">Minimum version 62</p>
-        <a href="#" class="btn bg-blue-500 text-white">Add and install extension</a>
+        <a href="#" class="btn bg-blue-600 hover:bg-blue-500  text-white">Add and install extension</a>
 
       </div>
 
@@ -142,7 +146,7 @@
 
         <h3 class="mt-8 capitalize">Add to firefox</h3>
         <p class="mb-12 mt-1 text-gray-500">Minimum version 62</p>
-        <a href="#" class="btn bg-blue-500 text-white">Add and install extension</a>
+        <a href="#" class="btn bg-blue-600 hover:bg-blue-500  text-white">Add and install extension</a>
 
       </div>
 
@@ -154,14 +158,100 @@
 
         <h3 class="mt-8 capitalize">Add to Opera</h3>
         <p class="mb-12 mt-1 text-gray-500">Minimum version 62</p>
-        <a href="#" class="btn bg-blue-500 text-white">Add and install extension</a>
+        <a href="#" class="btn bg-blue-600 hover:bg-blue-500  text-white">Add and install extension</a>
 
       </div>
+    </div>
+  </section>
+
+  <!-- accordion  -->
+  <section id="accordion-container" class="bg-gray-100 py-16  mx-auto">
+
+    <div class="text-center w-[90%] max-w-md md:w-auto mx-auto">
+      <h2 class="text-3xl pt-8 md:text-4xl">Frequently Asked Questions</h2>
+      <p class="my-6  mx-auto text-gray-500 text-md">Here are some of our FAQs. If you have any other questions you’d
+        like answered please feel free to email us.
+      </p>
+    </div>
+
+    <!-- container  -->
+    <div class="mx-auto w-[90%] md:w-[70%]">
+      <div class="flex flex-row justify-between">
+        <h3>What is a Bookmark?</h3>
+        <box-icon id="accordion-icon" name='chevron-down' class="cursor-pointer accordion-icon  hover:text-red-400"></box-icon>
+      </div>
+      <div  class="accordion overflow-hidden opacity-0 transition-all ease-in-out bg-white rounded-lg h-0">
+        <p  class="accordion-paragraph transition-all ease-in-out -mt-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi voluptas placeat pariatur repellendus cumque?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis tempora illum aspernatur ab ut consequuntur quod nostrum omnis maiores commodi?
+        </p>
+        
+      </div>
+      <hr class="bg-white mt-4 ">
+    </div>
+    <!-- container  -->
+    <div class="mx-auto w-[90%] my-10 md:w-[70%]">
+      <div class="flex flex-row justify-between">
+        <h3>How can I request a new browser?</h3>
+        <box-icon id="accordion-icon" name='chevron-down' class="cursor-pointer accordion-icon  hover:text-red-400"></box-icon>
+      </div>
+      <div  class="accordion opacity-0 overflow-hidden transition-all ease-in-out bg-white rounded-lg h-0">
+        <p  class="accordion-paragraph transition-all ease-in-out duration-100 -mt-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi voluptas placeat pariatur repellendus cumque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et voluptatibus eveniet earum. Laudantium quaerat sit nostrum dolorem, eius sunt. Nemo!</p>
+        
+      </div>
+      <hr class="bg-white mt-4 ">
+    </div>
+    <!-- container  -->
+    <div class="mx-auto w-[90%] md:w-[70%]">
+      <div class="flex flex-row justify-between">
+        <h3>Is there a mobile app?</h3>
+        <box-icon name='chevron-down' class="accordion-icon cursor-pointer  hover:text-red-400"></box-icon>
+      </div>
+      <div class="accordion opacity-0 overflow-hidden transition-all ease-in-out  bg-white rounded-lg h-0">
+        <p class="accordion-paragraph transition-all ease-in-out -mt-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi voluptas placeat pariatur repellendus cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quaerat dolores esse ea sunt tempore velit possimus dolorum laudantium dicta!</p>
+        
+      </div>
+      <hr class="bg-white mt-4 ">
+    </div>
+
+    <!-- container  -->
+    <div class="mx-auto w-[90%] my-10 md:w-[70%]">
+      <div class="flex flex-row justify-between">
+        <h3>What about other Chromium browsers?
+        </h3>
+        <box-icon name='chevron-down' class="accordion-icon cursor-pointer  hover:text-red-400"></box-icon>
+      </div>
+      <div class="accordion opacity-0 overflow-hidden transition-all ease-in-out  bg-white rounded-lg h-0">
+        <p class="accordion-paragraph transition-all ease-in-out -mt-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi voluptas placeat pariatur repellendus cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quaerat dolores esse ea sunt tempore velit possimus dolorum laudantium dicta!</p>
+        
+      </div>
+      <hr class="bg-white mt-4 ">
     </div>
   </section>
 
 
 
 </body>
+<script>
+  const accordionIconCollection = document.getElementsByClassName('accordion-icon');
+  const accordionCollection = document.getElementsByClassName('accordion');
+  const accordionParagraphCollection = document.getElementsByClassName('accordion-paragraph');
+
+
+const accordionIcon = Array.from(accordionIconCollection);
+const accordion = Array.from(accordionCollection);
+const accordionParagraph = Array.from(accordionParagraphCollection);
+
+accordionIcon.forEach( (element, index) => {
+
+  element.addEventListener('click', () => {
+    console.log("hello world.")
+    element.classList.toggle('rotate-180')
+    accordion[index].classList.toggle('for-accordion')
+    accordionParagraph[index].classList.toggle('for-paragraph');
+    
+})
+  
+});
+</script>
 
 </html>
