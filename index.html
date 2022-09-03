@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/styles.css" rel="stylesheet">
+  <title>Bookmark Manager</title>
+</head>
+
+<body>
+  <header class="w-[90%] md:w-[70%] mx-auto py-10">
+    <!-- flex-container  -->
+    <div class="flex justify-between items-center">
+      <div class="logo cursor-pointer">
+        <img src="./assets/logo-bookmark.svg" alt="">
+      </div>
+      <div id="menu" class="block md:hidden cursor-pointer">
+        <div id="bars-1" class="w-10 h-1 rounded-xl bg-black"></div>
+        <div id="bars-2" class="w-10 h-1 rounded-xl bg-black mt-1"></div>
+      </div>
+
+      <div id="navigation" class="hidden w-[40%] space-x-4 md:flex justify-around items-center">
+        <div id="main-nav" class="flex justify-between items-center space-x-8">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact</a>
+        </div>
+        <a href="#" class="btn btn-purple">Login</a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <section id="hero-section" class="w-[90%] md:w-[70%] mx-auto my-16 py-4">
+    <!-- flex-container -->
+    <div class="flex flex-col-reverse  items-center md:flex-row md:justify-between">
+      <div class="max-w-md text-center my-16 md:text-left">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl">A Simple Bookmark Manager
+        </h1>
+        <p class="my-8 text-gray-500 text-md">A clean and simple interface to organize your favourite websites. Open a
+          new browser tab and see your sites
+          load instantly. Try it for free.
+        </p>
+
+        <a href="#" class="btn bg-blue-600 text-white">Get it on chrome</a>
+        <a href="#" class="btn">Get it on firefox</a>
+      </div>
+
+      <div id="image-container" class="w-[85%] max-w-md">
+        <img class="w-[100%] block" src="./assets/hero-bg.png" alt="">
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- features  -->
+  <section id="features" class="bg-gray-100 py-12">
+    <div class="text-center w-[90%] max-w-md md:w-auto mx-auto">
+      <h2 class="text-3xl pt-8 md:text-4xl">Features</h2>
+      <p class="my-6  mx-auto text-gray-500 text-md">Our aim is to make it quick and easy for you to access your
+        favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+    </div>
+
+    <!-- flex-container  -->
+    <div
+      class="flex flex-col items-center text-center mt-28 space-y-8 md:flex-row md:justify-between md:w-[70%] mx-auto md:mt-40">
+      <div id="image-container" class="w-[80%] max-w-lg">
+        <img class="w-[100%] block" src="./assets/illustration-features-tab-1.png" alt="">
+      </div>
+      <div class="text-center max-w-md md:text-left ">
+        <h2 class="text-3xl md:text-4xl ">Bookmark in one click</h2>
+        <p class="my-6 mb-8 text-gray-500">Organize your bookmarks however you like. Our simple drag-and-drop interface
+          gives you complete control over how you manage your favourite sites.</p>
+        <a href="#" class="btn bg-blue-600 text-white">More info</a>
+      </div>
+    </div>
+
+    <!-- flex-container  -->
+    <div
+      class=" flex flex-col items-center text-center mt-28 space-y-8 md:flex-row-reverse md:justify-between md:w-[70%] mx-auto md:space-y-0 md:my-40">
+      <div id="image-container" class="w-[70%] max-w-lg">
+        <img class="w-[100%] block" src="./assets/illustration-features-tab-2.png" alt="">
+      </div>
+      <div class="text-center max-w-md md:text-left ">
+        <h2 class="text-3xl md:text-4xl">Share your bookmarks
+        </h2>
+        <p class="my-6 mb-8 text-gray-500">Easily share your bookmarks and collections with others. Create a shareable
+          link that you can send at the click of a button.</p>
+        <a href="#" class="btn bg-blue-600 text-white">More info</a>
+      </div>
+    </div>
+
+    <!-- flex-container  -->
+    <div
+      class=" flex flex-col items-center text-center mt-28 space-y-8 md:flex-row md:justify-between md:w-[70%] mx-auto md:space-y-0 md:my-40">
+      <div id="image-container" class="w-[70%] max-w-lg">
+        <img class="w-[100%] block" src="./assets/illustration-features-tab-3.png" alt="">
+      </div>
+      <div class="text-center max-w-md md:text-left ">
+        <h2 class="text-3xl md:text-4xl">Intelligent search
+        </h2>
+        <p class="my-6 mb-8 text-gray-500">Our powerful search feature will help you find saved sites in no time at all.
+          No need to crawl through all of your bookmarks.</p>
+        <a href="#" class="btn bg-blue-600 text-white">More info</a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Download the extension -->
+
+  <section id="download-operation" class="my-20 w-[90%] md:w-[70%] mx-auto">
+    <div class="text-center w-[90%] max-w-md md:w-auto mx-auto">
+      <h2 class="text-3xl pt-8 md:text-4xl">Download the extension</h2>
+      <p class="my-6  mx-auto text-gray-500 text-md">We’ve got more browsers in the pipeline. Please do let us know if
+        you’ve got a favourite you’d like us to prioritize.</p>
+    </div>
+
+    <!-- flex-container  -->
+    <div class="flex flex-col mt-16 items-center mx-auto space-y-16 md:flex-row md:justify-between md:space-y-0 md:space-x-12">
+      <div class="px-8 w-[100%] rounded-md py-10 mx-auto text-center shadow-md md:w-[90%]">
+        <div id="image-container mx-auto">
+          <img class="block max-w-[100%] mx-auto" src="./assets/logo-chrome.svg" alt="">
+        </div>
+
+        <h3 class="mt-8 capitalize">Add to Chrome</h3>
+        <p class="mb-12 mt-1 text-gray-500">Minimum version 62</p>
+        <a href="#" class="btn bg-blue-500 text-white">Add and install extension</a>
+
+      </div>
+
+
+      <div class="px-8 w-[100%] rounded-md py-10 mx-auto text-center shadow-md md:w-[90%]">
+        <div id="image-container mx-auto">
+          <img class="block max-w-[100%] mx-auto" src="./assets/logo-firefox.svg" alt="">
+        </div>
+
+        <h3 class="mt-8 capitalize">Add to firefox</h3>
+        <p class="mb-12 mt-1 text-gray-500">Minimum version 62</p>
+        <a href="#" class="btn bg-blue-500 text-white">Add and install extension</a>
+
+      </div>
+
+
+      <div class="px-8 w-[100%] rounded-md py-10 mx-auto text-center shadow-md md:w-[90%]">
+        <div id="image-container mx-auto">
+          <img class="block max-w-[100%] mx-auto" src="./assets/logo-opera.svg" alt="">
+        </div>
+
+        <h3 class="mt-8 capitalize">Add to Opera</h3>
+        <p class="mb-12 mt-1 text-gray-500">Minimum version 62</p>
+        <a href="#" class="btn bg-blue-500 text-white">Add and install extension</a>
+
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>
