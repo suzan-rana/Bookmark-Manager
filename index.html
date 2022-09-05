@@ -7,12 +7,12 @@
   <link href="./css/styles.css" rel="stylesheet">
   <title>Bookmark Manager</title>
   <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js" defer></script>
-  <script src="main.js"></script>
+  <script src="./dark.js" defer></script>
 
 </head>
 
 <body>
-  <header class="w-[90%] md:w-[70%] mx-auto py-10">
+  <header class="w-[90%] md:w-[70%] mx-auto py-10 dark:bg-[#1B2430]">
     <!-- flex-container  -->
     <div class="flex justify-between items-center">
       <div class="logo cursor-pointer">
@@ -25,11 +25,11 @@
 
       <div id="navigation" class="hidden w-[40%] space-x-4 md:flex justify-around items-center">
         <div id="main-nav" class="flex justify-between items-center space-x-8">
-          <a href="#" class="hover:text-gray-500">Features</a>
-          <a href="#" class="hover:text-gray-500">Pricing</a>
-          <a href="#" class="hover:text-gray-500">Contact</a>
+          <a href="#" class="hover:text-gray-500 dark:text-white">Features</a>
+          <a href="#" class="hover:text-gray-500 dark:text-white">Pricing</a>
+          <a href="#" class="hover:text-gray-500 dark:text-white">Contact</a>
         </div>
-        <a href="#" class="btn btn-purple hover:bg-blue-500 ">Login</a>
+        <a href="#" class="btn btn-purple hover:bg-blue-500 " id="switch" >Light Mode</a>
 
       </div>
 
@@ -37,13 +37,13 @@
 
   </header>
 
-  <section id="hero-section" class="w-[90%] md:w-[70%] mx-auto my-16 py-4">
+  <section id="hero-section" class="w-[90%] md:w-[70%] mx-auto my-16 py-4 dark:bg-[#1B2430]">
     <!-- flex-container -->
     <div class="flex flex-col-reverse  items-center md:flex-row md:justify-between">
       <div class="max-w-md text-center my-16 md:text-left">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl">A Simple Bookmark Manager
+        <h1 class="text-3xl md:text-4xl lg:text-5xl dark:text-white">A Simple Bookmark Manager
         </h1>
-        <p class="my-8 text-gray-500 text-md">A clean and simple interface to organize your favourite websites. Open a
+        <p class="my-8 text-gray-500 text-md dark:text-white">A clean and simple interface to organize your favourite websites. Open a
           new browser tab and see your sites
           load instantly. Try it for free.
         </p>
@@ -62,10 +62,10 @@
   </section>
 
   <!-- features  -->
-  <section id="features" class="bg-gray-100 py-12">
+  <section id="features" class="bg-gray-100 py-12 dark:bg-[#1B2430]">
     <div class="text-center w-[90%] max-w-md md:w-auto mx-auto">
-      <h2 class="text-3xl pt-8 md:text-4xl">Features</h2>
-      <p class="my-6  mx-auto text-gray-500 text-md">Our aim is to make it quick and easy for you to access your
+      <h2 class="text-3xl pt-8 md:text-4xl dark:text-white">Features</h2>
+      <p class="my-6  mx-auto text-gray-500 text-md dark:text-white">Our aim is to make it quick and easy for you to access your
         favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
     </div>
 
@@ -76,8 +76,8 @@
         <img class="w-[100%] block" src="./assets/illustration-features-tab-1.png" alt="">
       </div>
       <div class="text-center max-w-md md:text-left ">
-        <h2 class="text-3xl md:text-4xl ">Bookmark in one click</h2>
-        <p class="my-6 mb-8 text-gray-500">Organize your bookmarks however you like. Our simple drag-and-drop interface
+        <h2 class="text-3xl md:text-4xl dark:text-white ">Bookmark in one click</h2>
+        <p class="my-6 mb-8 text-gray-500 dark:text-white">Organize your bookmarks however you like. Our simple drag-and-drop interface
           gives you complete control over how you manage your favourite sites.</p>
         <a href="#" class="btn bg-blue-600 hover:bg-blue-500  text-white">More info</a>
       </div>
@@ -90,9 +90,9 @@
         <img class="w-[100%] block" src="./assets/illustration-features-tab-2.png" alt="">
       </div>
       <div class="text-center max-w-md md:text-left ">
-        <h2 class="text-3xl md:text-4xl">Share your bookmarks
+        <h2 class="text-3xl md:text-4xl dark:text-white">Share your bookmarks
         </h2>
-        <p class="my-6 mb-8 text-gray-500">Easily share your bookmarks and collections with others. Create a shareable
+        <p class="my-6 mb-8 text-gray-500 dark:text-white">Easily share your bookmarks and collections with others. Create a shareable
           link that you can send at the click of a button.</p>
         <a href="#" class="btn bg-blue-600 hover:bg-blue-500  text-white">More info</a>
       </div>
@@ -105,9 +105,9 @@
         <img class="w-[100%] block" src="./assets/illustration-features-tab-3.png" alt="">
       </div>
       <div class="text-center max-w-md md:text-left ">
-        <h2 class="text-3xl md:text-4xl">Intelligent search
+        <h2 class="text-3xl md:text-4xl dark:text-white">Intelligent search
         </h2>
-        <p class="my-6 mb-8 text-gray-500">Our powerful search feature will help you find saved sites in no time at all.
+        <p class="my-6 mb-8 text-gray-500 dark:text-white">Our powerful search feature will help you find saved sites in no time at all.
           No need to crawl through all of your bookmarks.</p>
         <a href="#" class="btn bg-blue-600 hover:bg-blue-500  text-white">More info</a>
       </div>
@@ -118,10 +118,10 @@
 
   <!-- Download the extension -->
 
-  <section id="download-operation" class="my-20 w-[90%] md:w-[70%] mx-auto">
+  <section id="download-operation" class="my-20 w-[90%] md:w-[70%] mx-auto dark:bg-[#1B2430]">
     <div class="text-center w-[90%] max-w-md md:w-auto mx-auto">
-      <h2 class="text-3xl pt-8 md:text-4xl">Download the extension</h2>
-      <p class="my-6  mx-auto text-gray-500 text-md">We’ve got more browsers in the pipeline. Please do let us know if
+      <h2 class="text-3xl pt-8 md:text-4xl dark:text-white">Download the extension</h2>
+      <p class="my-6  mx-auto text-gray-500 text-md dark:text-white">We’ve got more browsers in the pipeline. Please do let us know if
         you’ve got a favourite you’d like us to prioritize.</p>
     </div>
 
@@ -133,8 +133,8 @@
           <img class="block max-w-[100%] mx-auto" src="./assets/logo-chrome.svg" alt="">
         </div>
 
-        <h3 class="mt-8 capitalize">Add to Chrome</h3>
-        <p class="mb-12 mt-1 text-gray-500">Minimum version 62</p>
+        <h3 class="mt-8 capitalize dark:text-white">Add to Chrome</h3>
+        <p class="mb-12 mt-1 text-gray-500 dark:text-white">Minimum version 62</p>
         <a href="#" class="btn bg-blue-600 hover:bg-blue-500  text-white">Add and install extension</a>
 
       </div>
@@ -145,8 +145,8 @@
           <img class="block max-w-[100%] mx-auto" src="./assets/logo-firefox.svg" alt="">
         </div>
 
-        <h3 class="mt-8 capitalize">Add to firefox</h3>
-        <p class="mb-12 mt-1 text-gray-500">Minimum version 62</p>
+        <h3 class="mt-8 capitalize dark:text-white">Add to firefox</h3>
+        <p class="mb-12 mt-1 text-gray-500 dark:text-white">Minimum version 62</p>
         <a href="#" class="btn bg-blue-600 hover:bg-blue-500  text-white">Add and install extension</a>
 
       </div>
@@ -157,8 +157,8 @@
           <img class="block max-w-[100%] mx-auto" src="./assets/logo-opera.svg" alt="">
         </div>
 
-        <h3 class="mt-8 capitalize">Add to Opera</h3>
-        <p class="mb-12 mt-1 text-gray-500">Minimum version 62</p>
+        <h3 class="mt-8 capitalize dark:text-white">Add to Opera</h3>
+        <p class="mb-12 mt-1 text-gray-500 dark:text-white">Minimum version 62</p>
         <a href="#" class="btn bg-blue-600 hover:bg-blue-500  text-white">Add and install extension</a>
 
       </div>
@@ -166,11 +166,11 @@
   </section>
 
   <!-- accordion  -->
-  <section id="accordion-container" class="bg-gray-100 py-16  mx-auto">
+  <section id="accordion-container" class="bg-gray-100 py-16  mx-auto dark:bg-[#1B2430]">
 
     <div class="text-center w-[90%] max-w-md md:w-auto mx-auto">
-      <h2 class="text-3xl pt-8 md:text-4xl">Frequently Asked Questions</h2>
-      <p class="my-6  mx-auto text-gray-500 text-md">Here are some of our FAQs. If you have any other questions you’d
+      <h2 class="text-3xl pt-8 md:text-4xl dark:text-white">Frequently Asked Questions</h2>
+      <p class="my-6  mx-auto text-gray-500 text-md dark:text-white">Here are some of our FAQs. If you have any other questions you’d
         like answered please feel free to email us.
       </p>
     </div>
@@ -178,11 +178,11 @@
     <!-- container  -->
     <div class="mx-auto w-[90%] md:w-[70%]">
       <div class="flex flex-row justify-between">
-        <h3>What is a Bookmark?</h3>
+        <h3 class="dark:text-white">What is a Bookmark?</h3>
         <box-icon id="accordion-icon" name='chevron-down' class="cursor-pointer accordion-icon  hover:text-red-400"></box-icon>
       </div>
-      <div  class="accordion overflow-hidden opacity-0 transition-all ease-in-out bg-white rounded-lg h-0">
-        <p  class="accordion-paragraph transition-all ease-in-out -mt-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi voluptas placeat pariatur repellendus cumque?
+      <div  class="accordion overflow-hidden opacity-0 transition-all ease-in-out bg-white dark:bg-[#2C3639]  rounded-lg h-0">
+        <p  class="accordion-paragraph transition-all ease-in-out -mt-16 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi voluptas placeat pariatur repellendus cumque?
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis tempora illum aspernatur ab ut consequuntur quod nostrum omnis maiores commodi?
         </p>
         
@@ -238,9 +238,9 @@
   const accordionParagraphCollection = document.getElementsByClassName('accordion-paragraph');
 
 
-const accordionIcon = Array.from(accordionIconCollection);
-const accordion = Array.from(accordionCollection);
-const accordionParagraph = Array.from(accordionParagraphCollection);
+  const accordionIcon = Array.from(accordionIconCollection);
+  const accordion = Array.from(accordionCollection);
+  const accordionParagraph = Array.from(accordionParagraphCollection);
 
 accordionIcon.forEach( (element, index) => {
 
